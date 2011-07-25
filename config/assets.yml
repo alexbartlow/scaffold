@@ -1,0 +1,4 @@
+embed_assets: on
+compress_assets: on
+template_function: '_.template'
+template_extension: 'T'
