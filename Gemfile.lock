@@ -46,6 +46,7 @@ GEM
     execjs (1.2.0)
       multi_json (~> 1.0)
     factory_girl (2.0.1)
+    flutie (1.2.2)
     haml (3.1.2)
     i18n (0.5.0)
     jammit (0.6.3)
@@ -115,6 +116,7 @@ PLATFORMS
 DEPENDENCIES
   barista
   factory_girl
+  flutie
   haml
   jammit
   jquery-rails
