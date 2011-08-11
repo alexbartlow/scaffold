@@ -1,4 +1,4 @@
-/* DO NOT MODIFY. This file was compiled Thu, 11 Aug 2011 01:26:31 GMT from
+/* DO NOT MODIFY. This file was compiled Thu, 11 Aug 2011 01:28:49 GMT from
  * /home/bartlowa/Projects/backbone/app/coffeescripts/application.coffee
  */
 

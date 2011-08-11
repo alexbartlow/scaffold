@@ -7,11 +7,9 @@ $ ->
   $(':button').each ->
     opts = {}; self = $(this)
     if self.attr('data-icon')
-      opts.icons = { primary : 'ui-icon-'+self.attr('data-icon')}
+      opts.icons = primary: 'ui-icon-'+self.attr('data-icon')
     else if self.attr('data-icon-only')
-      opts.icons = {
-        primary : 'ui-icon-'+self.attr('data-icon-only')
-      }
+      opts.icons = primary: 'ui-icon-'+self.attr('data-icon-only')
       opts.text = false
     self.button(opts)
 
