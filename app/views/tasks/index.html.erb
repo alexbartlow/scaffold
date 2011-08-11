@@ -1,0 +1,28 @@
+<h1>Tasks</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Due date</th>
+    <th>Description</th>
+    <th></th>
+  </tr>
+
+<% @tasks.each do |task| %>
+  <tr>
+    <td><%= task.name %></td>
+    <td><%= task.due_date %></td>
+    <td><%= task.description %></td>
+    <td>
+      <div class="buttonset">
+        <%= icon_button(:wrench) %>
+        <%= icon_button(:trash) %>
+      </div>
+    </td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Task', new_task_path %>
