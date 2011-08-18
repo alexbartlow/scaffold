@@ -4,15 +4,17 @@ module ApplicationHelper
       :class => "ui-icon ui-icon-#{name.to_s}").html_safe
   end
 
-  def icon_button(name, text="")
+  def icon_button(name, *args)
+    opts = args.extract_options!
+    text = args[0] || name
     opts = {
-      :value => "button"
+      :value => text
     }
-    if text.empty?
+    unless args[0]
       opts['data-icon-only'] = name
     else
       opts['data-icon'] = name
     end
-    content_tag('button', "button", opts)
+    content_tag('button', text, opts)
   end
 end
