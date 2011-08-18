@@ -6,13 +6,14 @@ gem 'sqlite3'
 gem 'sass'
 gem 'haml'
 gem 'jquery-rails'
-gem 'barista'
-gem 'therubyracer', :require => false
-gem 'factory_girl'
-gem 'nokogiri'
 gem 'jammit'
 gem 'flutie'
+
 group :development, :test do
   gem 'rspec'
   gem 'rspec-rails'
+  gem 'barista'
+  gem 'therubyracer', :require => false
+  gem 'factory_girl'
+  gem 'nokogiri'
 end
