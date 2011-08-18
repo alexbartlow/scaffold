@@ -4,7 +4,7 @@ $ ->
   $('[data-timepicker]').timepicker()
   $('[data-datepicker]').datepicker()
 
-  $(':button').each ->
+  $(':button,input[type="submit"]').each ->
     opts = {}; self = $(this)
     if self.attr('data-icon')
       opts.icons = primary: 'ui-icon-'+self.attr('data-icon')
@@ -14,3 +14,5 @@ $ ->
     self.button(opts)
 
   $('.buttonset').buttonset()
+  $('.accordion').accordion()
+  $('.tabs').tabs()
